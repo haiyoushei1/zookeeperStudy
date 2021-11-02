@@ -44,7 +44,7 @@ public class zkClient {
     @Test
     public void create() throws IOException, InterruptedException, KeeperException {
         init();
-        String nodeData = zkCli1.create("/zkTest1", "test_one".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+        String nodeData = zkCli1.create("/servers", "servers".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
 
 
     }
